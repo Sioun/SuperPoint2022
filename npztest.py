@@ -1,10 +1,9 @@
 from numpy import load
 import cv2
 
-data = load('E:\\2021-2022 Msc\pytorch-superpoint-master\pytorch-superpoint-master\logs\SuperPoint_COCO_to_Synthetic_test\predictions\\'
-            'train\Frames_S1\FrameBuffer_0008.npz')
-data2 = load('logs\superpoint_test90000\predictions\\train\Frames_S1\FrameBuffer_0008.npz')
-pic = cv2.imread('E:\\2021-2022 Msc\dataset\SyntheticColon_I\Frames_S1\FrameBuffer_0008.png')
+data = load('logs\\train_pseudogroundtruth_900000\predictions\\train\Frames_B1\FrameBuffer_0682.npz')
+data2 = load('logs\\tuned_SuperPoint\predictions\\train\Frames_S1\FrameBuffer_0682.npz')
+pic = cv2.imread('E:\\2021-2022 Msc\dataset\SyntheticColon_I\Frames_S1\FrameBuffer_0682.png')
 lst = data.files
 lst2 = data2.files
 for item in lst:

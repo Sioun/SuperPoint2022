@@ -1,0 +1,4 @@
+load model: logs\superpoint_coco_heat2_0\checkpoints\superPointNet_90000_checkpoint.pth.tar
+homography adaptation: 20
+Homography adaptation: 20
+output pairs: 27623

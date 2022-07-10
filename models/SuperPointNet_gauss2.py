@@ -135,6 +135,7 @@ def get_matches(deses_SP):
 
 def main():
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+    print('---------- SP start!!!!')
     model = SuperPointNet_gauss2()
     model = model.to(device)
 

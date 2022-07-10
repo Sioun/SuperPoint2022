@@ -3,7 +3,7 @@ data:
     dataset: 'SyntheticColon1' # 'Kitti'
     root:  'E:\2021-2022 Msc\dataset\SyntheticColon_I' # /data/kitti/kitti_wVal
     root_split_txt: 'E:\2021-2022 Msc\dataset\SyntheticColon_I'
-    labels: logs\magicpoint_base_SyntheticColon1F1\predictions
+    labels: logs\train_pseudogroundtruth_900000\predictions
 
     gaussian_label:
         enable: true
@@ -86,15 +86,14 @@ model:
             other_settings: 'train from scratch, 2d method'
     lambda_res: 100
 
-retrain: true  # set true for new model
-reset_iter: true
-train_iter: 170000
+retrain: false  # set true for new model
+reset_iter: false
+train_iter: 120000
 validation_interval: 2000
 tensorboard_interval: 400
 save_interval: 2000
 validation_size: 5
 
-pretrained:
-# pretrained: 'logs/superpoint_coco_heat2_0/checkpoints/superPointNet_90000_checkpoint.pth.tar'
+pretrained: 'logs/superpoint_coco_heat2_0/checkpoints/superPointNet_90000_checkpoint.pth.tar'
 
 

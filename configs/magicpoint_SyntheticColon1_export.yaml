@@ -46,6 +46,6 @@ model:
 # eval_iter: -1
 
 # pretrained: 'pretrained\superpoint_v1.pth'
-pretrained: 'logs\superpoint_coco_heat2_0\checkpoints\superPointNet_90000_checkpoint.pth.tar'
+pretrained: 'logs\superpoint_syn_test\checkpoints\superPointNet_120000_checkpoint.pth.tar'
 
 

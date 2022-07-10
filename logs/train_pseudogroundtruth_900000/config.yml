@@ -1,0 +1,39 @@
+data:
+  alteration: all
+  dataset: SyntheticColon1
+  export_folder: train
+  gaussian_label:
+    enable: false
+    sigma: 1.0
+  homography_adaptation:
+    aggregation: sum
+    enable: true
+    filter_counts: 0
+    homographies:
+      params:
+        allow_artifacts: true
+        patch_ratio: 0.85
+        perspective: true
+        perspective_amplitude_x: 0.2
+        perspective_amplitude_y: 0.2
+        rotation: true
+        scaling: true
+        scaling_amplitude: 0.2
+        translation: true
+    num: 20
+  preprocessing:
+    resize:
+    - 472
+    - 472
+  root: E:\2021-2022 Msc\dataset\SyntheticColon_I
+  root_split_txt: E:\2021-2022 Msc\dataset\SyntheticColon_I
+model:
+  batch_size: 1
+  detection_threshold: 0.015
+  name: SuperPointNet_gauss2
+  nms: 4
+  params: {}
+  subpixel:
+    enable: false
+  top_k: 600
+pretrained: logs\superpoint_coco_heat2_0\checkpoints\superPointNet_90000_checkpoint.pth.tar
