@@ -1,6 +1,6 @@
 data:
     # name: 'kitti'
-    dataset: 'SyntheticColon1'  # 'coco' 'hpatches', 'Kitti', ''
+    dataset: 'SyntheticColon1'  # 'coco' , 'SyntheticColon1'
     export_folder: 'train' #  <'train' | 'val'>
     alteration: 'all'  # 'all' 'i' 'v'
     root: 'E:\2021-2022 Msc\dataset\SyntheticColon_I' # root for dataset
@@ -32,12 +32,12 @@ data:
 #    cache_in_memory: false
 #    validation_size: 100
 model:
-    # name: 'SuperPointNet'  # need to use old version of network
+#    name: 'SuperPointNet'  # need to use old version of network
     name: 'SuperPointNet_gauss2' # 'SuperPointNet_gauss2'
     batch_size: 1
     detection_threshold: 0.015 # 0.015
     nms: 4
-    top_k: 600 # no use
+    top_k: 300 # no use
 
     params: {}
     subpixel:
@@ -45,7 +45,8 @@ model:
 
 # eval_iter: -1
 
-# pretrained: 'pretrained\superpoint_v1.pth'
-pretrained: 'logs\superpoint_syn_test\checkpoints\superPointNet_120000_checkpoint.pth.tar'
+#pretrained: 'pretrained\superpoint_v1.pth'
+#pretrained: 'logs\superpoint_coco_heat2_0\checkpoints\superPointNet_90000_checkpoint.pth.tar'
+pretrained: 'E:\\2021-2022 Msc\pytorch-superpoint-master\pytorch-superpoint-master\pretrained\superPointNet_114000_checkpoint.pth.tar'
 
 

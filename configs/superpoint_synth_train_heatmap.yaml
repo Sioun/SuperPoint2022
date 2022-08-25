@@ -88,7 +88,7 @@ model:
 
 retrain: false  # set true for new model
 reset_iter: false
-train_iter: 120000
+train_iter: 130000
 validation_interval: 2000
 tensorboard_interval: 400
 save_interval: 2000
